@@ -1,39 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 /* FFDE91 - for buttons */
+
 body {
   font-family: 'Inter';
   margin: 0;
   font-size: 1rem;
   font-weight: 1.5;
   line-height: 1.5;
-  color: #ffffff;
-  background-color: #2C1338;
+  /* color: black;
+  background-color: #fff; */
 }
 
 .nav-page {
-  display: flex;
-  background: #190b20;
-  border-bottom: 1px solid #FFDE91;
+  text-align: center;
 }
 
 .nav-page a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  /* color: black; */
+  padding: 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+
+}
+
+.nav-page li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-page a:hover {
-  background-color: #FFDE91;
-  color: #2C1338;
 }
 
 .nav-page h2 {
-  padding: 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: 30px;
+  padding: 15px;
+  /* color: black; */
+  border-bottom: 1px solid black;
+  width: 500px;
   margin: auto;
+  font-size: 45px;
+}
+
+@media only screen and (max-width: 700px){
+  .nav-page li {
+    width: 525px
+  }
+}
+
+.home-page h2 {
+  text-align: center;
+}
+
+.home-page {
+  padding-top: 100px;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.dark-mode {
+  float: right;
+  padding: 30px;
 }
