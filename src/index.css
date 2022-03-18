@@ -7,8 +7,8 @@ body {
   font-size: 1rem;
   font-weight: 1.5;
   line-height: 1.5;
-  /* color: black;
-  background-color: #fff; */
+  color: white;
+  background-color: #121212;
 }
 
 .nav-page {
@@ -16,10 +16,10 @@ body {
 }
 
 .nav-page a {
-  /* color: black; */
+  color: white;
   padding: 15px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15PX;
 
 }
 
@@ -34,31 +34,53 @@ body {
 
 .nav-page h2 {
   padding: 15px;
-  /* color: black; */
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   width: 500px;
   margin: auto;
   font-size: 45px;
 }
 
-@media only screen and (max-width: 700px){
+@media screen and (max-width: 375px) {
   .nav-page li {
-    width: 525px
+    margin: auto;
   }
 }
 
-.home-page h2 {
-  text-align: center;
+@media screen and (max-width: 414px) {
+  .nav-page li {
+    margin: auto;
+  }
+
+  .nav-page h2 {
+    width: 300px;
+  }
 }
+
+@media screen and (min-width: 500px) {
+  .nav-page li {
+    margin: auto;
+  }
+}
+
 
 .home-page {
-  padding-top: 100px;
-  text-align: left;
-  max-width: 800px;
-  margin: auto;
+  text-align: center;
+  padding: 25px;
 }
 
-.dark-mode {
-  float: right;
-  padding: 30px;
+.home-page p {
+  font-size: 35px;
+  cursor: pointer;
 }
+
+.crossed-line {
+  text-decoration: line-through;
+  text-decoration-color: cyan;
+  cursor: pointer;
+}
+
+.test {
+  text-align: left;
+  padding: 25px;
+}
+
