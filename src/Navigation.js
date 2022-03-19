@@ -4,11 +4,7 @@ const Navigation = () => {
 
     return (
         <div className="nav-page">
-            <h2>Crossline</h2>
-            <li>    
-                <Link to="/">HOME</Link>
-                <Link to="/test">ADD</Link>
-            </li>
+            <h2>Grocery list</h2>
         </div>
      );
 }
