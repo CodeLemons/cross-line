@@ -9,6 +9,7 @@ const Home = () => {
         e.preventDefault();
         addItemToArray(groceryItem);
         console.log(list);
+        setItems('');
     };
 
     const addItemToArray = (item) => {
@@ -20,9 +21,6 @@ const Home = () => {
         element.classList.toggle("crossed-line");
     };
 
-    const clearFields = () => {
-        document.getElementById("form-box").value = "";
-    };
     
     return ( 
         <div className="home-page">
@@ -34,16 +32,16 @@ const Home = () => {
                     value={items}
                     onChange={(e) => setItems(e.target.value)}
                     />
-                    <button onClick={clearFields}>Add</button>
+                    <button>Add</button>
                 </form>
             </div>
-            {list.map(listItems => {
-                return (
-                    <div key={listItems.id}>
-                        <p onClick={crossLine}>{listItems.items}</p>
-                    </div>
-                )
-            })}
+            <div className="item-list">
+                {list.map((listItems) => {
+                    return (
+                        <li onClick={crossLine} key={listItems.uniqueId}>{listItems.items}</li>
+                    )
+                })}
+            </div>
         </div>
      );
 }

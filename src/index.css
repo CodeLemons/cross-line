@@ -68,9 +68,12 @@ body {
   padding: 25px;
 }
 
-.home-page p {
+.home-page li {
   font-size: 35px;
   cursor: pointer;
+  list-style-type: none;
+  margin: auto;
+  padding: 10px;
 }
 
 .crossed-line {
