@@ -21,6 +21,10 @@ const Home = () => {
         element.classList.toggle("crossed-line");
     };
 
+    const removeItemFromArray = (e) => {
+        const name = e.target.getAttribute("name");
+        setList(list.filter(item => item.items !== name));
+    };
     
     return ( 
         <div className="home-page">
@@ -32,13 +36,13 @@ const Home = () => {
                     value={items}
                     onChange={(e) => setItems(e.target.value)}
                     />
-                    <button>Add</button>
+                    <button className="button-1">Add</button>
                 </form>
             </div>
             <div className="item-list">
                 {list.map((listItems) => {
                     return (
-                        <li onClick={crossLine} key={listItems.uniqueId}>{listItems.items}</li>
+                        <li name={listItems.items} onTouchMove={removeItemFromArray} onClick={crossLine} key={listItems.uniqueId}>{listItems.items}</li>
                     )
                 })}
             </div>

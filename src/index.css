@@ -29,9 +29,6 @@ body {
   justify-content: center;
 }
 
-.nav-page a:hover {
-}
-
 .nav-page h2 {
   padding: 15px;
   border-bottom: 1px solid white;
@@ -74,12 +71,20 @@ body {
   list-style-type: none;
   margin: auto;
   padding: 10px;
+  user-select: none;
 }
 
-.crossed-line {
-  text-decoration: line-through;
-  text-decoration-color: cyan;
+@keyframes crossed-line {
+  from { text-decoration-color: transparent; }
+  to { text-decoration-color: auto; }
+}
+
+.crossed-line{
   cursor: pointer;
+  text-decoration: line-through;
+  animation: crossed-line 0.2s linear;
+  text-decoration-color: #FFDE91;
+  text-decoration-thickness: 5px;
 }
 
 .test {
@@ -87,3 +92,30 @@ body {
   padding: 25px;
 }
 
+.button-1 {
+  background-color: #FFDE91; /* Green */
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Inter';
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12.5px;
+  margin: 4px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form {
+  position: relative;
+}
+
+input[type=text] {
+  width: 230px;
+  padding: 9px 20px;
+  margin: 4px 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
