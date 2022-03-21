@@ -66,12 +66,15 @@ body {
 }
 
 .home-page li {
-  font-size: 35px;
+  font-size: 30px;
   cursor: pointer;
   list-style-type: none;
-  margin: auto;
-  padding: 10px;
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+
 }
 
 @keyframes crossed-line {
@@ -93,9 +96,9 @@ body {
 }
 
 .button-1 {
-  background-color: #FFDE91; /* Green */
+  background-color: #FFDE91;
   border: none;
-  color: white;
+  color: #121212;
   font-weight: bold;
   font-family: 'Inter';
   padding: 9px 20px;
@@ -118,4 +121,17 @@ input[type=text] {
   margin: 4px 5px;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+
+.list-button {
+  background-color: #FFDE91;
+  border: none;
+  color: #121212;
+  font-weight: bold;
+  font-family: 'Inter';
+  padding: 3.3px 8px;
+  margin: 4px 8px;
+  font-size: 16px;
+  border-radius: 5px;
 }

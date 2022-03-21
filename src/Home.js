@@ -42,8 +42,12 @@ const Home = () => {
             <div className="item-list">
                 {list.map((listItems) => {
                     return (
-                        <li name={listItems.items} onTouchMove={removeItemFromArray} onClick={crossLine} key={listItems.uniqueId}>{listItems.items}</li>
+                        <li onClick={crossLine} key={listItems.uniqueId}>
+                            <button key={listItems.uniqueId} className="list-button" name={listItems.items} onClick={removeItemFromArray}>✘</button>
+                            {listItems.items}
+                        </li>
                     )
+
                 })}
             </div>
         </div>
