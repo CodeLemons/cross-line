@@ -4,63 +4,58 @@ A simple React JS app for keeping track of your groceries.
 
 ## Description
 
-<img align="center" src="https://cloud.githubusercontent.com/assets/532272/21507867/3376e9fe-cc4a-11e6-9350-7ec4f680da36.gif">
+<img align="center" src="https://i.imgur.com/oGziR43.png">
 
 This app is simple and straight-forward, you add items to the grocery list...then you cross the item that you've already added to your shopping cart. In case you changed your mind about an item, just press the big "x" next to it. Simple really.
 
 ## Getting Started
 
-
-
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Any libraries needed are in package.json
+* Works on any OS
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Clone this repo in a desired place
+* in Terminal run -> 
+```
+npm install
+```
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Running the app is simple
+* Follow below
 ```
-code blocks for commands
+npm run
 ```
+* Done
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Normaly this section is supposed to provide you with help, but in this case i am the one in need of help.
+Any advice on better practices on building react apps is much appreciated.
+
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Ali-Hamza Asam  
+[@lemonchamp_](https://twitter.com/lemonchamp_)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+N/A
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [bradtraversy](https://github.com/bradtraversy/react-crash-2021)
+* [iamshaunjp](https://github.com/iamshaunjp/Complete-React-Tutorial)
