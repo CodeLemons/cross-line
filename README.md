@@ -4,7 +4,7 @@ A simple React JS app for keeping track of your groceries.
 
 ## Description
 
-![alt text](https://i.imgur.com/GFvzKdg.png)
+![alt text](https://i.imgur.com/oGziR43.png)
 
 This app is simple and straight-forward, you add items to the grocery list...then you cross the item that you've already added to your shopping cart. In case you changed your mind about an item, just press the big "x" next to it. Simple really.
 
